@@ -1,11 +1,11 @@
 # Env Settings
 
 ## Conda 
-## 가상환경
+### 가상환경
 - venv와 conda
 - 리눅스 버전이 업데이트 된 이후, 가상환경이 있어야 파이썬을 설치할 수 있음
 
-## Miniconda 설치
+### Miniconda 설치
 - [홈페이지](https://www.anaconda.com/)
 - Install for Just Me / All Users -> 설치 위치 차이
 - [공식 문서](https://www.anaconda.com/docs/main)
