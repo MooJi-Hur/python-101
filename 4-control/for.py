@@ -24,3 +24,23 @@ for i in range(1, 10) :
     for j in range(1, 10):
         print(f"{i} * {j} = {i * j}")
     print("\n")
+
+
+# hello, world를 10번 반복해서 출력
+
+for _ in range(10):
+    print("hello, world!")
+
+# enumerate : (index, value)
+print(subjects)
+
+for idx, val in enumerate(subjects):    # index 정보를 함께 출력
+    print(f"index : {idx} \t value : {val}")
+
+print(enumerate(subjects))  # subjects를 활용한 새 객체를 만들어 반환
+print(id(enumerate(subjects)))
+
+for i in enumerate(subjects):   # tuple이 출력됨, unpacking 한 것
+    print(i)
+
+
