@@ -21,3 +21,16 @@ for i in range(3, 0, -1):
     print(i, end=" ")
 else:
     print("end!!!")
+
+for i in range(10):
+    if i % 2 == 0:
+        continue
+    print(i, end=" ")
+else: print("end!!!")
+
+for i in range(10):
+    if i > 5:
+        break
+    print(i)
+else:   # 반복문이 break 구문을 수행하여 정상 종료가 되지 않아서, else가 실행되지 않음
+    print("end!!!")

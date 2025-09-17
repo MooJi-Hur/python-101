@@ -9,3 +9,5 @@
 ### enumerate
 
 ## while
+
+## else 키워드의 목적 cf. try catch 구문
