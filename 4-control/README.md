@@ -8,4 +8,4 @@
 ## for
 ### enumerate
 
-## whilei
+## while

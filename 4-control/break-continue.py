@@ -15,3 +15,9 @@ for i in range(10):
         continue
     print(i, end=" ")
 print("end!!!")
+
+# loop + else
+for i in range(3, 0, -1):
+    print(i, end=" ")
+else:
+    print("end!!!")
