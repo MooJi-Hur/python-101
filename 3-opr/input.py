@@ -16,13 +16,16 @@ kor = input("What is your korean?")
 math = input("What is your math?")
 eng = input("What is your english?")
 
-total = int(kor) + int(math) + int(eng)
+myInfo = {
+    "name" : name, "kor" :int(kor), "math" : int(math),
+    "english" :  int(eng)
+}
+
+total = myInfo["kor"] + myInfo["math"] + myInfo["english"]
 average = total / 3
 
-myInfo = {
-    "name" : name, "kor" :kor, "math" :math,
-    "english" :  eng, "sum" : total, "average":  average
-}
+myInfo["sum"] = total
+myInfo["avg"] = average
 
 myItems = myInfo.items()
 print(myItems)
