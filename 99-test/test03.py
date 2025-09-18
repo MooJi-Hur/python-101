@@ -5,7 +5,8 @@ students = [{'name': '홍길동', 'kor': 100, 'eng': 70, 'math': 89},
             {'name': '이순신', 'kor': 66, 'eng': 87, 'math': 100},
             {'name': '김선달', 'kor': 91, 'eng': 100, 'math': 84}]
 
-totals = [student['kor'] + student['eng'] + student['math'] for student in students]
+totals = [ student['kor'] + student['eng'] + student['math'] for student in students]
+print(totals)
 avgs = list(map(lambda x: x,totals))
 
 for index, student in enumerate(students):
