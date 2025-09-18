@@ -3,7 +3,6 @@
 def fibo(n):
     pass
 
-
 if __name__ == '__main__':
     n = int(input('출력할 갯수 입력 : '))
     fibo(n)

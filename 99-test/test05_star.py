@@ -6,7 +6,7 @@
 *****
 '''
 def star01():
-    pass
+    print(['*'*i for i in range(1, 5)])
 
 
 

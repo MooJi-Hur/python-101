@@ -4,6 +4,11 @@ students = {'홍길동': 76, '이순신': 91, '김선달': 83}
 score_sum = 0
 score_avg = 0
 
+for _, score in students.items():
+    score_sum += score
+
+score_avg = score_sum / len(students)
+
 
 
 
