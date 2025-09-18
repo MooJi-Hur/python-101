@@ -10,6 +10,7 @@
 
 
 ## type 추론
+- 코드를 실행할 때 타입을 결정
 
 ## Sequence, Iterable 차이
 

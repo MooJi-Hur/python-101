@@ -25,7 +25,7 @@ if 0:
 elif 1:
     print("true")
 
-# None : true
+# None : false
 if None:
     print("true")
 else :
