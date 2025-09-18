@@ -5,15 +5,7 @@ students = [{'name': '홍길동', 'kor': 100, 'eng': 70, 'math': 89},
             {'name': '이순신', 'kor': 66, 'eng': 87, 'math': 100},
             {'name': '김선달', 'kor': 91, 'eng': 100, 'math': 84}]
 
-totals = [ student['kor'] + student['eng'] + student['math'] for student in students]
-print(totals)
-avgs = list(map(lambda x: x,totals))
-
-for index, student in enumerate(students):
-    # total = student['kor'] + student['eng'] + student['math']
-    # avg = total / 3
-
-    print(f"[{student['name']}]\n총점 : {totals[index]}\t평균 : {avgs[index]:.2f}")
+scores = [(lambda x: print(f"[{x["name"]}]\n총점 : {x["kor"] + x["eng"] + x["math"]}\t평균 : {(x["kor"] + x["eng"] + x["math"] )/ 3: .2f}"))(student) for student in students]
 
 
 '''
