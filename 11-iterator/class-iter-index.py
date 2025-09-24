@@ -1,26 +1,24 @@
 class MyIter:
 
     def __init__(self, end):
-        self.start = 0
         self.end = end
-        self.value = 1
 
     def __iter__(self):
+        self.current = 0
         return self
 
     def __next__(self):
-        self.start += 1
-        if self.start <= self.end:
-            self.value = self.start
-            return self.value
+        if self.current < self.end:
+            self.current += 1
+            return self.current
         else:
             raise StopIteration
 
     def __getitem__(self,index):     # Called to implement evaluation of self[key]
-        if self.start <= self.end:
-            return list(self)[index]
+        if 0 <= index < self.end:
+            return index + 1
         else:
-            return IndexError
+            raise IndexError("Index out of range")
 
 if __name__ == '__main__':
     for i in MyIter(10):
